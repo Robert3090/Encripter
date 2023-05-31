@@ -1,0 +1,33 @@
+body {
+    background: url("imgs/fondo3.png");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+button {
+    background-color: #EA1646;
+    font-size: 1.5rem;
+    color: white;
+}
+
+textarea {
+    resize: none;
+    background-color: transparent;
+    color: white;
+    font-size: 2rem;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+textarea::placeholder {
+    margin: 4px;
+    font-size: 2rem;
+}
+
+.resultado {
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);      
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Encriptador</title>
+</head>
+<body>
+    <div class="flex flex-grow h-full">
+        <div class="basis-2/12 p-7">
+            <img src="/imgs/logo.png" alt="/logo">
+        </div>
+        <div class="basis-7/12 my-7">
+            <textarea class="w-full mb-5 h-5/6" placeholder="Ingresa un texto" id="texto"></textarea>
+            <div class="flex justify-between mt-7">
+                <button class="rounded-full px-3 py-2 w-2/5" onclick="desencriptar()">Desencriptar</button>
+                <button class="rounded-full px-3 py-2 w-2/5" onclick="encriptar()">Encriptar</button>
+            </div>
+        </div>
+        <div class="basis-3/12 m-5 resultado rounded-lg flex justify-center" id="result">
+            <div class="sin-mensaje text-white my-auto">
+                <img class="mb-11" src="/imgs/sin-mensaje.png" alt="fondo">
+                <p class="font-bold text-2xl mb-3">Ningún mensaje fue encontrado</p>
+                <p class="text-sm text-center">Ingrese el texto que deseas encriptar o desencriptar</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="/javascript.js"></script>
+
+</html>
